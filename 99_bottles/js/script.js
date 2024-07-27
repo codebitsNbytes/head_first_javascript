@@ -39,6 +39,7 @@ let singleWord = "bottle";
 let count = 99;
 let chorus = "Take one down pass it around";
 
+// if count is greater than 0 the final line will never run
 while (count >= 0) {
   if (count > 1) {
     console.log(`${count} ${word} of beer on the wall`);
