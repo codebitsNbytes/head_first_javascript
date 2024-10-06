@@ -6,9 +6,9 @@ code = `${code} midnight`;
 alert (code);
 
 // page 239
-// var planet = document.getElementById("greenplanet");
-// planet.innerHTML = "Red Alert: hit by phaser fire!";
-// console.log(planet.innerHTML);
+var planet = document.getElementById("greenplanet");
+planet.innerHTML = "Red Alert: hit by phaser fire!";
+console.log(planet.innerHTML);
 
 // var myBlog = document.getElementsByClassName("h2blog");
 // myBlog.setAttribute("class", "blog");
