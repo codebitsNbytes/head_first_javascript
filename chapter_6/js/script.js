@@ -10,9 +10,6 @@ var planet = document.getElementById("greenplanet");
 planet.innerHTML = "Red Alert: hit by phaser fire!";
 console.log(planet.innerHTML);
 
-// var myBlog = document.getElementsByClassName("h2blog");
-// myBlog.setAttribute("class", "blog");
-
 let highNumArr = [2, 74, 90, 154, 88, 24];
 let highNumHolder = 0;
 
