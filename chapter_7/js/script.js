@@ -39,3 +39,89 @@ var header = document.getElementById("header");
 if (header == null) {
   console.log(`No header to be find`);
 }
+
+if (99 == "99") {
+  console.log("A number equals a string");
+} else {
+  console.log("No way a number equals a string");
+}
+
+// page 293
+function lieDetectorTest () {
+  var lies = 0;
+
+  var stolenDiamond = {};
+  if (stolenDiamond) {
+    console.log("You stole the diamond");
+    lies++;
+    // truthy
+  }
+  var car = {
+    keysInPocket: null
+  };
+  if (car.keysInPocket) {
+    console.log("Uh oh, guess you stole the car!");
+    lies++;
+    // falsey
+  }
+  if (car.emptyGasTank) {
+    console.log("You drove the car after you stole it!");
+    lies++;
+    // falsey
+  }
+  var foundYouAtTheCrimeScene = [];
+  if (foundYouAtTheCrimeScene) {
+    console.log("A sure sign of guilt");
+    lies++;
+    // truthy
+  }
+  if (foundYouAtTheCrimeScene[0]) {
+    console.log("Caught with a stolen item!");
+    lies++;
+    // truthy ** so this one is falsey. Is it because of the 0 in the array?
+    // foundYouAtTheCrimeScene[0] index 0 is undefined, that's why it's falsey
+  }
+        
+  var yourName = " ";
+  if (yourName) {
+    console.log("Guess you lied about your name");
+    lies++;
+  }
+  return lies;
+}
+var numberOfLies = lieDetectorTest ();
+console.log("You told " + numberOfLies + " lies");
+if (numberOfLies >= 3) {
+  console.log("Guilty as charged");
+}
+
+// page 294
+var text = "YOU SHOULD NEVER SHOUT WHEN TYPING";
+var presentableText = text.toLowerCase();
+if (presentableText.length > 0) {
+  alert(presentableText);
+}
+
+// page 294
+function showHugsAndKisses () {
+  var emot = "XOxxOO";
+  var hugs = 0;
+  var kisses = 0;
+
+  emot = emot.trim();
+  emot = emot.toUpperCase();
+
+  for (var i = 0; i < emot.length; i++) {
+    if (emot.charAt(i) === "X") {
+      hugs++;
+    }
+    else if (emot.charAt(i) === "O") {
+      kisses++;
+    }
+  }
+  return `You are getting ${kisses} kisses and ${hugs} hugs`;
+}
+
+var showLove = showHugsAndKisses();
+
+console.log(showLove);
