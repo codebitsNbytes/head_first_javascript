@@ -125,3 +125,22 @@ function showHugsAndKisses () {
 var showLove = showHugsAndKisses();
 
 console.log(showLove);
+
+// page 298
+var phrase = "the cat in the hat";
+var index = phrase.indexOf("cat"); // the word cat starts at index 4
+
+console.log(`there's a cat sitting at index ${index}`);
+
+index = phrase.indexOf("the", 5);
+console.log(`there's a "the" sitting at index ${index}`);
+
+// page 299
+var data = "name|phone|address";
+var val = data.substring(5, 10); // start counting from string 5 to 10 (10 is not included so the last index will be 9)
+
+console.log(`Substring is "${val}"`);
+
+val = data.substring(5); // start showing from string 5 till the end of the string
+
+console.log(`Substring is now "${val}"`);
