@@ -1,3 +1,4 @@
+
 var x;
 
 if (x == undefined) {
@@ -96,12 +97,19 @@ if (numberOfLies >= 3) {
 }
 
 // page 294
+console.log("*****************************");
+console.log("   ");
+
 var text = "YOU SHOULD NEVER SHOUT WHEN TYPING";
 var presentableText = text.toLowerCase();
 if (presentableText.length > 0) {
   alert(presentableText);
 }
+console.log("   ");
 
+console.log("*****************************");
+
+console.log("   ");
 // page 294
 function showHugsAndKisses () {
   var emot = "XOxxOO";
@@ -126,7 +134,13 @@ var showLove = showHugsAndKisses();
 
 console.log(showLove);
 
-// page 298
+console.log("   ");
+
+console.log("*****************************");
+
+console.log("   ");
+
+// page 298 indexOf method
 var phrase = "the cat in the hat";
 var index = phrase.indexOf("cat"); // the word cat starts at index 4
 
@@ -135,12 +149,86 @@ console.log(`there's a cat sitting at index ${index}`);
 index = phrase.indexOf("the", 5);
 console.log(`there's a "the" sitting at index ${index}`);
 
-// page 299
+console.log("   ");
+
+console.log("*****************************");
+
+console.log("   ");
+
+// page 299 substring method
 var data = "name|phone|address";
 var val = data.substring(5, 10); // start counting from string 5 to 10 (10 is not included so the last index will be 9)
 
 console.log(`Substring is "${val}"`);
 
-val = data.substring(5); // start showing from string 5 till the end of the string
+val = data.substring(5); // start counting from index 5 till the end of the string
 
 console.log(`Substring is now "${val}"`);
+
+console.log("   ");
+
+console.log("*****************************");
+
+console.log("   ");
+
+// page 299 split method
+console.log("page 299 split method");
+var vals = data.split("|");
+
+console.log("Split array is ", vals);
+
+console.log("   ");
+
+console.log("*****************************");
+
+// page 300 some examples self created
+var remove = " this is a test ";
+var noEmptySpace = remove.trim();
+var newString = remove.replace("test", "TEST");
+
+console.log(`${remove}`);
+console.log(`${noEmptySpace}`);
+console.log(`${newString}`);
+
+console.log("   ");
+
+console.log("*****************************");
+
+// page 301
+function validate (phonenumber) {
+  if (phonenumber.length !== 8) {
+    return false;
+  }
+  for (var i = 0; i < phonenumber.length; i++) {
+    if (i === 3) {
+      if (phonenumber.charAt(i) !== "-") {
+        return false;
+      }
+    }
+    else if (isNaN(phonenumber.charAt(i))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+var validateNumber = validate ("123-4567");
+
+console.log(validateNumber);
+
+// page 305
+console.log("*****************************");
+
+console.log("   ");
+
+function Duck (sound) {
+  this.sound = sound;
+  this.quack = function () {console.log(this.sound);}
+}
+
+var toy = new Duck ("quack quack");
+
+toy.quack();
+
+console.log(typeof toy);
+console.log(toy instanceof Duck);
