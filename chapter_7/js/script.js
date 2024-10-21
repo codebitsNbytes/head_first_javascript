@@ -205,6 +205,7 @@ function validate (phonenumber) {
         return false;
       }
     }
+    // NaN never equals any other value, including itself, so to test for NaN use the function isNaN
     else if (isNaN(phonenumber.charAt(i))) {
       return false;
     }
