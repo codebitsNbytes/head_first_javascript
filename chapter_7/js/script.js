@@ -102,9 +102,11 @@ console.log("   ");
 
 var text = "YOU SHOULD NEVER SHOUT WHEN TYPING";
 var presentableText = text.toLowerCase();
+
 if (presentableText.length > 0) {
   alert(presentableText);
 }
+
 console.log("   ");
 
 console.log("*****************************");
@@ -133,6 +135,21 @@ function showHugsAndKisses () {
 var showLove = showHugsAndKisses();
 
 console.log(showLove);
+
+console.log("   ");
+
+console.log("*****************************");
+
+console.log("   ");
+
+// page 297 the length property
+var input = "jenny@wickedlysmart.com";
+
+for (var i = 0; i < input.length; i++) {
+  if (input.charAt(i) === "@") {
+    console.log(`There's an @ sign at index ${i}`);
+  }
+}
 
 console.log("   ");
 
@@ -175,7 +192,26 @@ console.log("   ");
 console.log("page 299 split method");
 var vals = data.split("|");
 
-console.log("Split array is ", vals);
+console.log(`Split array is `, vals);
+
+// youtube examples
+// split options
+// 1 - string.split()
+// 2 - string.split(separator)
+// 3 - string.split(separator, limit)
+var splitString = "The morning is upon us.";
+var arr0 = splitString.split(); // no separator
+var arr1 = splitString.split(' '); // separator
+var arr2 = splitString.split(''); // separator
+var arr3 = splitString.split('o'); // separator
+var arr4 = splitString.split('o', 3); // separator, limit
+
+console.log(`This split has no separator "${arr0}"`);
+console.log(`This split separates in the empty spaces "${arr1}"`);
+console.log(`This will split the entire string into single characters "${arr2}"`);
+// the character o is removed from the string and replaced with a ,
+console.log(`This will split the string on every o character "${arr3}"`);
+console.log(`"${arr4}"`);
 
 console.log("   ");
 
@@ -233,3 +269,14 @@ toy.quack();
 
 console.log(typeof toy);
 console.log(toy instanceof Duck);
+
+console.log(typeof test1);
+console.log(typeof test2);
+console.log(typeof test3);
+console.log(typeof test4);
+console.log(typeof test5);
+console.log(typeof test6);
+console.log(typeof test7);
+console.log(typeof test8);
+console.log(typeof test9);
+console.log(typeof test10);
