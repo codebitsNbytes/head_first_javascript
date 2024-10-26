@@ -260,7 +260,7 @@ console.log("   ");
 
 function Duck (sound) {
   this.sound = sound;
-  this.quack = function () {console.log(this.sound);}
+  this.quack = function () {console.log(this.sound;)}
 }
 
 var toy = new Duck ("quack quack");
@@ -269,6 +269,10 @@ toy.quack();
 
 console.log(typeof toy);
 console.log(toy instanceof Duck);
+
+console.log("   ");
+
+console.log("*****************************");
 
 console.log(typeof test1);
 console.log(typeof test2);
@@ -280,3 +284,33 @@ console.log(typeof test7);
 console.log(typeof test8);
 console.log(typeof test9);
 console.log(typeof test10);
+
+if (99 == "99") {
+  console.log("A number equals a string!");
+}
+else {
+  console.log("No way a number equals a string");
+}
+
+console.log("*****************************");
+
+console.log(typeof Duck);
+
+console.log("*****************************");
+
+function instanceOf (play) {
+  this.play = play;
+  this.speed = function () {console.log(this.play);}
+}
+
+var btnPlay = new instanceOf ("Kolo Kolo");
+
+btnPlay.speed();
+
+console.log(typeof btnPlay);
+console.log(btnPlay instanceof instanceOf);
+
+
+
+
+
