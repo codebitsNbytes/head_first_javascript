@@ -310,7 +310,3 @@ btnPlay.speed();
 console.log(typeof btnPlay);
 console.log(btnPlay instanceof instanceOf);
 
-
-
-
-
