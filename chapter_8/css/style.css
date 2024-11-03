@@ -42,6 +42,15 @@ td {
   border: 0.1rem solid black;
 }
 
+.cells {
+  text-align: center;
+  vertical-align: middle;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+
 form {
   padding: 1.5rem;
   background-color: rgb(83, 175, 19);
@@ -51,4 +60,16 @@ form input {
   background-color: rgb(152, 207, 113);
   border-color: rbg(83, 175, 19);
   font-size: 1.6rem;
+}
+
+.hit {
+  background-image: url("../img/ship_final.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.miss {
+  background-image: url("../img/miss.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
