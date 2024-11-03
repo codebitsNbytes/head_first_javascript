@@ -45,10 +45,7 @@ td {
 .cells {
   text-align: center;
   vertical-align: middle;
-  border-top: 0;
-  border-left: 0;
-  border-bottom: 0;
-  border-right: 0;
+  border: none; 
 }
 
 form {
@@ -60,6 +57,7 @@ form input {
   background-color: rgb(152, 207, 113);
   border-color: rbg(83, 175, 19);
   font-size: 1.6rem;
+  border: 0.2rem solid rgb(38, 175, 19);
 }
 
 .hit {
