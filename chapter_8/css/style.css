@@ -16,6 +16,11 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   font-family: "MesloLGS Nerd Font Mono";
+ /* background-color: black;*/
+}
+
+#board {
+
 }
 
 h1 {
@@ -24,7 +29,7 @@ h1 {
 }
 
 h1 {
-  color: hsl(0, 0%, 35%);
+  color: hsl(0, 0%, 25%);
 }
 
 table {
@@ -32,7 +37,18 @@ table {
 }
 
 td {
-  width: 4rem;
-  height: 4rem;
+  width: 9.4rem;
+  height: 9.4rem;
   border: 0.1rem solid black;
+}
+
+form {
+  padding: 1.5rem;
+  background-color: rgb(83, 175, 19);
+}
+
+form input {
+  background-color: rgb(152, 207, 113);
+  border-color: rbg(83, 175, 19);
+  font-size: 1.6rem;
 }
